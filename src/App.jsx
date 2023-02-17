@@ -16,7 +16,15 @@ import { FiPhoneCall } from "react-icons/fi";
 import MobileView from "./MobileView";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [Input, setInput] = useState("");
+  const [getStartedBtnEnabled, setgetStartedBtnEnabled] = useState(false);
+  function ValidateEmail(mail) {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+      setgetStartedBtnEnabled(true);
+    } else {
+      setgetStartedBtnEnabled(false);
+    }
+  }
 
   return (
     <>
@@ -46,11 +54,12 @@ function App() {
         >
           <div
             style={{
+              width: "34%",
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
-              justifyContent: "space-between",
-              gap: "50px",
+              justifyContent: "start",
+              gap: "30px",
             }}
           >
             <div>
@@ -64,7 +73,7 @@ function App() {
               <a href="#services">Services</a>
             </div>
           </div>
-          <div>
+          <div style={{ width: "33%", display: "grid", placeItems: "center" }}>
             <img
               style={{
                 height: "40px",
@@ -75,11 +84,12 @@ function App() {
           </div>
           <div
             style={{
+              width: "33%",
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
-              justifyContent: "space-between",
-              gap: "40px",
+              justifyContent: "flex-end",
+              gap: "20px",
             }}
           >
             <div>
@@ -146,9 +156,9 @@ function App() {
             </p>
             <div
               style={{
+                width: "80%",
                 margin: "20px 0",
                 padding: "5px 5px",
-                width: "70%",
                 border: "1px solid rgba(255,255,255,0.5)",
                 borderRadius: "30px",
                 textAlign: "start",
@@ -158,24 +168,42 @@ function App() {
               }}
             >
               <input
-                placeholder="enter your email"
+                placeholder="Enter your email"
                 style={{
                   all: "unset",
                   background: "transparent",
                   textAlign: "start",
                   padding: "5px 10px",
                   fontSize: "0.8em",
-                  width: "50%",
+                  width: "65%",
+                  borderRadius: "20px",
+                }}
+                onChange={(e) => {
+                  setInput(e.target.value);
+                  ValidateEmail(Input);
                 }}
               />
+
               <button
+                disabled={!getStartedBtnEnabled}
+                onClick={() => {}}
                 style={{
-                  padding: "10px 15px",
+                  padding: "5px 10px",
                   borderRadius: "20px",
                   color: "black",
                 }}
               >
-                Get started
+                {getStartedBtnEnabled ? (
+                  <div>
+                    <a
+                      href={`mailto:admin@innards.in?subject=About Inna Services&body=Hi I am interested in your service.My email:${Input}`}
+                    >
+                      <p style={{ color: "black" }}> Get Started</p>
+                    </a>
+                  </div>
+                ) : (
+                  <div>Get started</div>
+                )}
               </button>
             </div>
             <div
@@ -606,10 +634,15 @@ function App() {
                   fontSize: "0.8em",
                   width: "50%",
                 }}
+                onChange={(e) => {
+                  setInput(e.target.value);
+                  ValidateEmail(Input);
+                }}
               />
               <BsArrowRight color="white" />
             </div>
             <button
+              disabled={!getStartedBtnEnabled}
               style={{
                 width: "100%",
                 padding: "10px 15px",
@@ -617,7 +650,17 @@ function App() {
                 color: "black",
               }}
             >
-              Get started
+              {getStartedBtnEnabled ? (
+                <div>
+                  <a
+                    href={`mailto:admin@innards.in?subject=About Inna Services&body=Hi I am interested in your service.My email:${Input}`}
+                  >
+                    <p style={{ color: "black" }}> Get Started</p>
+                  </a>
+                </div>
+              ) : (
+                <div>Get started</div>
+              )}
             </button>
           </div>
         </section>
@@ -718,7 +761,7 @@ function App() {
                 +91-7980798828
               </a>
               <br /> Email:
-              <a href="mailto:admin@innards.in?subject = About Inna Services&body = Hi I am interested in your service">
+              <a href="mailto:admin@innards.in?subject=About Inna Services&body=Hi I am interested in your service">
                 admin@innards.in
               </a>
             </p>

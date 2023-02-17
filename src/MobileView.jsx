@@ -20,6 +20,15 @@ import { HashLink } from "react-router-hash-link";
 
 export default function MobileView() {
   const [ShowNav, setShowNav] = useState(false);
+  const [Input, setInput] = useState("");
+  const [getStartedBtnEnabled, setgetStartedBtnEnabled] = useState(false);
+  function ValidateEmail(mail) {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+      setgetStartedBtnEnabled(true);
+    } else {
+      setgetStartedBtnEnabled(false);
+    }
+  }
   function NavList(params) {
     return (
       <div
@@ -194,15 +203,30 @@ export default function MobileView() {
                 fontSize: "0.8em",
                 width: "50%",
               }}
+              onChange={(e) => {
+                setInput(e.target.value);
+                ValidateEmail(Input);
+              }}
             />
             <button
+              disabled={!getStartedBtnEnabled}
               style={{
                 padding: "10px 15px",
                 borderRadius: "20px",
                 color: "black",
               }}
             >
-              Get started
+              {getStartedBtnEnabled ? (
+                <div>
+                  <a
+                    href={`mailto:admin@innards.in?subject=About Inna Services&body=Hi I am interested in your service.My email:${Input}`}
+                  >
+                    <p style={{ color: "black" }}> Get Started</p>
+                  </a>
+                </div>
+              ) : (
+                <div>Get started</div>
+              )}
             </button>
           </div>
           <div
@@ -633,17 +657,32 @@ export default function MobileView() {
                 fontSize: "0.8em",
                 width: "50%",
               }}
+              onChange={(e) => {
+                setInput(e.target.value);
+                ValidateEmail(Input);
+              }}
             />
             <BsArrowRight color="black" />
           </div>
           <button
+            disabled={!getStartedBtnEnabled}
             style={{
               width: "100%",
               borderRadius: "20px",
               color: "black",
             }}
           >
-            Get started
+            {getStartedBtnEnabled ? (
+              <div>
+                <a
+                  href={`mailto:admin@innards.in?subject=About Inna Services&body=Hi I am interested in your service.My email:${Input}`}
+                >
+                  <p style={{ color: "black" }}> Get Started</p>
+                </a>
+              </div>
+            ) : (
+              <div>Get started</div>
+            )}
           </button>
         </div>
       </section>
