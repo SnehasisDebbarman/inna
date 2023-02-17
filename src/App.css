@@ -11,3 +11,45 @@
   padding: 0;
   text-align: center;
 }
+
+h4 {
+  text-align: start;
+}
+
+
+p {
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: start;
+}
+
+button p {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+a {
+  all: unset;
+  color: white !important;
+}
+
+.mobile_view {
+  display: none;
+  visibility: none !important;
+}
+
+.desktop_view {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile_view {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desktop_view {
+    display: none !important;
+    visibility: none !important;
+  }
+}
