@@ -204,6 +204,7 @@ export default function MobileView() {
               style={{
                 padding: "10px 15px",
                 borderRadius: "20px",
+                color: "black",
               }}
             >
               Get started
@@ -323,6 +324,7 @@ export default function MobileView() {
           ></p>
           <button
             style={{
+              color: "black",
               width: "max-content",
               borderRadius: "2em",
               display: "flex",
@@ -333,7 +335,7 @@ export default function MobileView() {
             }}
           >
             <p>Explore Benefits</p>
-            <BsArrowRight />
+            <BsArrowRight color="black" />
           </button>
         </div>
       </section>
@@ -487,10 +489,11 @@ export default function MobileView() {
               justifyContent: "center",
               alignItems: "center",
               gap: "1em",
+              color: "black",
             }}
           >
             <p>Explore Now</p>
-            <BsArrowRight />
+            <BsArrowRight color="black" />
           </button>
         </div>
       </section>
@@ -543,10 +546,11 @@ export default function MobileView() {
               justifyContent: "center",
               alignItems: "center",
               gap: "1em",
+              color: "black",
             }}
           >
             <p>Get Quote Now</p>
-            <BsArrowRight />
+            <BsArrowRight color="black" />
           </button>
         </div>
         <div
@@ -625,12 +629,13 @@ export default function MobileView() {
                 width: "50%",
               }}
             />
-            <BsArrowRight />
+            <BsArrowRight color="black" />
           </div>
           <button
             style={{
               width: "100%",
               borderRadius: "20px",
+              color: "black",
             }}
           >
             Get started
