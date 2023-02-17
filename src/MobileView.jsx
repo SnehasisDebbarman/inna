@@ -38,51 +38,46 @@ export default function MobileView() {
         <div
           onClick={() => {
             setShowNav(!ShowNav);
-            window.location.href = "#resources";
           }}
         >
           {" "}
-          <a href="#about" target="_self">
+          <a href="#about_mobile" target="_self">
             About
           </a>
         </div>
         <div
           onClick={() => {
             setShowNav(!ShowNav);
-            window.location.href = "#resources";
           }}
         >
-          <a href="#about" target="_self">
+          <a href="#about_mobile" target="_self">
             Project
           </a>
         </div>
         <div
           onClick={() => {
             setShowNav(!ShowNav);
-            window.location.href = "#resources";
           }}
         >
-          <a href="#services" target="_self">
+          <a href="#services_mobile" target="_self">
             Services
           </a>
         </div>
         <div
           onClick={() => {
             setShowNav(!ShowNav);
-            window.location.href = "#resources";
           }}
         >
-          <a href="#services" target="_self">
+          <a href="#services_mobile" target="_self">
             Features
           </a>
         </div>
         <div
           onClick={() => {
             setShowNav(!ShowNav);
-            window.location.href = "#resources";
           }}
         >
-          <a href="#resources" target="_self">
+          <a href="#resources_mobile" target="_self">
             Resources
           </a>
         </div>
@@ -340,7 +335,7 @@ export default function MobileView() {
         </div>
       </section>
       <section
-        id="about"
+        id="about_mobile"
         style={{
           // border: "2px solid red",
           width: "100%",
@@ -422,7 +417,7 @@ export default function MobileView() {
         </div>
       </section>
       <section
-        id="resources"
+        id="resources_mobile"
         style={{
           // border: "2px solid red",
           width: "100%",
@@ -498,7 +493,7 @@ export default function MobileView() {
         </div>
       </section>
       <section
-        id="services"
+        id="services_mobile"
         style={{
           // border: "2px solid red",
           width: "100%",
