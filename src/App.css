@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  scroll-behavior: smooth;
 }
 
 h4 {
@@ -30,6 +31,15 @@ button p {
 a {
   all: unset;
   color: white !important;
+}
+
+.telephone_link {
+  cursor: pointer;
+}
+
+.telephone_link:hover {
+  color: rgb(83, 123, 168) !important;
+  transition: color 0.5s ease-in-out;
 }
 
 .mobile_view {

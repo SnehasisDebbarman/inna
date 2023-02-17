@@ -172,6 +172,7 @@ function App() {
                 style={{
                   padding: "10px 15px",
                   borderRadius: "20px",
+                  color: "black",
                 }}
               >
                 Get started
@@ -206,18 +207,20 @@ function App() {
                     // backgroundColor: "",
                   }}
                 >
-                  <FiPhoneCall
-                    color="white"
-                    // size={15}
-                    style={{
-                      boxShadow: "2px 2px 4px -3px rgba(87,87,87,0.5)",
-                      padding: "7px",
-                      height: "30px",
-                      width: "30px",
-                      borderRadius: "16px",
-                      backgroundColor: "rgba(0,0,0,0.3)",
-                    }}
-                  />
+                  <a href="tel:+917980798828">
+                    <FiPhoneCall
+                      color="white"
+                      // size={15}
+                      style={{
+                        boxShadow: "2px 2px 4px -3px rgba(87,87,87,0.5)",
+                        padding: "7px",
+                        height: "30px",
+                        width: "30px",
+                        borderRadius: "16px",
+                        backgroundColor: "rgba(0,0,0,0.3)",
+                      }}
+                    />
+                  </a>
                 </div>
                 <div>
                   <p
@@ -237,7 +240,9 @@ function App() {
                       fontSize: "0.8em",
                     }}
                   >
-                    +91-7980798828
+                    <a className="telephone_link" href="tel:+917980798828">
+                      +91-7980798828
+                    </a>
                   </p>
                 </div>
               </div>
@@ -290,7 +295,7 @@ function App() {
               }}
             >
               <p>Explore Benefits</p>
-              <BsArrowRight />
+              <BsArrowRight color="black" />
             </button>
           </div>
         </section>
@@ -304,13 +309,23 @@ function App() {
           animationData={constructionAnim}
           loop={true}
         />
-        <section
+        <div
           id="about"
+          style={{
+            padding: "5rem",
+            marginTop: "100px",
+            backgroundColor: "rgba(0,0,0,0.1)",
+            width: "100%",
+          }}
+        >
+          <h2 style={{ fontSize: "2rem" }}>Our Works & Services</h2>
+        </div>
+        <section
           style={{
             // border: "2px solid red",
             width: "100%",
 
-            padding: "150px 50px",
+            padding: "50px",
             display: "flex",
             justifyContent: "space-between",
             // placeItems: "center",
@@ -455,7 +470,7 @@ function App() {
               }}
             >
               <p>Explore Now</p>
-              <BsArrowRight />
+              <BsArrowRight color="black" />
             </button>
           </div>
         </section>
@@ -512,7 +527,7 @@ function App() {
               }}
             >
               <p>Get Quote Now</p>
-              <BsArrowRight />
+              <BsArrowRight color="black" />
             </button>
           </div>
           <div
@@ -592,13 +607,14 @@ function App() {
                   width: "50%",
                 }}
               />
-              <BsArrowRight />
+              <BsArrowRight color="white" />
             </div>
             <button
               style={{
                 width: "100%",
                 padding: "10px 15px",
                 borderRadius: "20px",
+                color: "black",
               }}
             >
               Get started
@@ -697,8 +713,14 @@ function App() {
                 color: "rgba(255,255,255,0.6)",
               }}
             >
-              Phone No: +91-7980798828
-              <br /> Email: admin@innards.in
+              Phone No:
+              <a className="telephone_link" href="tel:+917980798828">
+                +91-7980798828
+              </a>
+              <br /> Email:
+              <a href="mailto:admin@innards.in?subject = About Inna Services&body = Hi I am interested in your service">
+                admin@innards.in
+              </a>
             </p>
             <div>
               <div

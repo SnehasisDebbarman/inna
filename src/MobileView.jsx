@@ -334,13 +334,23 @@ export default function MobileView() {
           </button>
         </div>
       </section>
-      <section
+      <div
         id="about_mobile"
+        style={{
+          padding: "5rem",
+          marginTop: "100px",
+          backgroundColor: "rgba(0,0,0,0.1)",
+          width: "100%",
+        }}
+      >
+        <h2 style={{ fontSize: "2rem" }}>Our Works & Services</h2>
+      </div>
+      <section
         style={{
           // border: "2px solid red",
           width: "100%",
 
-          padding: "150px 50px",
+          padding: "50px",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
@@ -664,13 +674,13 @@ export default function MobileView() {
             alignItems: "center",
             justifyContent: "center",
             gap: "20px",
+            paddingTop: "20px",
           }}
         >
-          {" "}
           <img
             style={{
               // height: "40px",
-              width: "100px",
+              width: "140px",
             }}
             src={logo}
             alt="inna"
