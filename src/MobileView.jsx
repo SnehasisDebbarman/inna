@@ -3,6 +3,7 @@ import { useState } from "react";
 import logo from "./assets/logo.webp";
 import constructionAnim from "./assets/constructins.json";
 import constructionOngoing from "./assets/construction_ongoing.json";
+import constructionAbout from "./assets/construction_about.json";
 import handshake from "./assets/handshake.json";
 import "./App.css";
 import Lottie from "lottie-react";
@@ -17,6 +18,21 @@ import {
 import { HiMenuAlt1 } from "react-icons/hi";
 import { FiPhoneCall } from "react-icons/fi";
 import { HashLink } from "react-router-hash-link";
+import bridge from "./assets/bridge.svg";
+import customerCare from "./assets/customer_service.svg";
+import saving from "./assets/saving.svg";
+import tracking from "./assets/tracking.svg";
+
+import carpernter from "./assets/carpernter.svg";
+import electrician from "./assets/electrician.svg";
+import marble from "./assets/marble.svg";
+import mason from "./assets/mason.svg";
+import painter from "./assets/painter.svg";
+import plumber from "./assets/plumber.svg";
+
+import data from "./assets/data.svg";
+import cost_effective from "./assets/cost_effective.svg";
+import information from "./assets/information.svg";
 
 export default function MobileView() {
   const [ShowNav, setShowNav] = useState(false);
@@ -50,8 +66,8 @@ export default function MobileView() {
           }}
         >
           {" "}
-          <a href="#about_mobile" target="_self">
-            About
+          <a href="#home_mobile" target="_self">
+            Home
           </a>
         </div>
         <div
@@ -60,7 +76,7 @@ export default function MobileView() {
           }}
         >
           <a href="#about_mobile" target="_self">
-            Project
+            About
           </a>
         </div>
         <div
@@ -77,8 +93,8 @@ export default function MobileView() {
             setShowNav(!ShowNav);
           }}
         >
-          <a href="#services_mobile" target="_self">
-            Features
+          <a href="#mission_mobile" target="_self">
+            Mission
           </a>
         </div>
         <div
@@ -137,8 +153,9 @@ export default function MobileView() {
         </div>
       </nav>
       <section
+        id="home_mobile"
         style={{
-          width: "90%",
+          width: "100%",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
@@ -323,7 +340,7 @@ export default function MobileView() {
               fontSize: "1.5em",
             }}
           >
-            ABOUT US
+            Are you Looking for Manpower/ Resources ?
           </h2>
           <p
             style={{
@@ -332,9 +349,9 @@ export default function MobileView() {
               fontSize: "0.7em",
             }}
           >
-            Your most trusted CONSTRUCTION Development Partner. Drive
-            performance and your cross-functional collaboration with easy-to-use
-            dashboards, data visualizations, and automated insights in one click
+            Is your business or organization presently seeking to procure the
+            necessary human resources and materials for the construction/repair
+            work?
           </p>
           <p
             style={{
@@ -353,13 +370,124 @@ export default function MobileView() {
               gap: "1em",
             }}
           >
-            <p>Explore Benefits</p>
+            <p>Get Quote Now</p>
             <BsArrowRight color="black" />
           </button>
         </div>
       </section>
-      <div
+      <section
+        style={{
+          width: "100%",
+        }}
         id="about_mobile"
+      >
+        <Lottie style={{}} animationData={constructionAbout} loop={true} />
+        <div style={{ textAlign: "start", padding: "20px" }}>
+          <h2>About Us</h2>
+          <p>
+            INNA is a provider of digital and physical interaction platforms
+            that simplify procurement and supplier processes. Our services are
+            designed to help our users make informed decisions and streamline
+            the procurement and supplier process, regardless of the industry or
+            niche they operate in.
+          </p>
+          <h4>Our Services</h4>
+          <div
+            style={{
+              width: "100%",
+              display: "grid",
+              //   gridTemplateColumns: "50% 50%",
+              gap: "20px",
+              padding: "30px",
+            }}
+          >
+            {" "}
+            <div style={styles.AboutCard}>
+              <img style={{ height: "40px" }} src={data} alt="data" srcset="" />
+              <h5>Data-backed knowledge guidance</h5>
+              <div
+                style={{
+                  height: "2px",
+                  background: "rgba(255, 255, 255, 0.1)",
+                }}
+              ></div>
+              <p
+                style={{
+                  fontSize: "0.7em",
+                  textAlign: "center",
+                  color: "white",
+                }}
+              >
+                We provide procurement guidance based on data analytics, helping
+                our users make informed decisions based on real-time insights.
+              </p>
+            </div>
+            <div style={styles.AboutCard}>
+              <img
+                style={{ height: "40px" }}
+                src={information}
+                alt="information"
+                srcset=""
+              />
+              <h5>Live information on Labour & resources</h5>
+              <div
+                style={{
+                  height: "2px",
+                  background: "rgba(255, 255, 255, 0.1)",
+                }}
+              ></div>
+              <p
+                style={{
+                  fontSize: "0.7em",
+                  textAlign: "center",
+                  color: "white",
+                }}
+              >
+                We provide real-time information on the availability of skilled
+                labour and other resources in the local area.
+              </p>
+            </div>
+            <div style={styles.AboutCard}>
+              <img
+                style={{ height: "40px" }}
+                src={cost_effective}
+                alt="cost_effective"
+                srcset=""
+              />
+              <h5>Statistical comparison on Cost & services</h5>
+
+              <div
+                style={{
+                  height: "2px",
+                  background: "rgba(255, 255, 255, 0.1)",
+                }}
+              ></div>
+              <p
+                style={{
+                  fontSize: "0.7em",
+                  textAlign: "center",
+                  color: "white",
+                }}
+              >
+                We offer statistical comparisons of cost, quality, and service
+                delivery from various suppliers, enabling our users to make
+                informed decisions that suit their specific needs.
+              </p>
+            </div>
+          </div>
+
+          <h4>Our Mission</h4>
+          <p>
+            Our mission is to simplify the procurement and supplier process for
+            businesses and individuals, enabling them to make informed decisions
+            that lead to better outcomes. We are committed to providing
+            user-friendly, reliable, and innovative solutions that help our
+            clients meet their goals and objectives with minimum hassle.
+          </p>
+        </div>
+      </section>
+      <div
+        id="mission_mobile"
         style={{
           padding: "5rem",
           marginTop: "100px",
@@ -367,19 +495,16 @@ export default function MobileView() {
           width: "100%",
         }}
       >
-        <h2 style={{ fontSize: "2rem" }}>Our Works & Services</h2>
+        <h2 style={{ fontSize: "2rem" }}>Our Mission & Goals</h2>
       </div>
       <section
         style={{
-          // border: "2px solid red",
           width: "100%",
-
-          padding: "50px",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          // placeItems: "center",
-          gap: "5%",
+          padding: "20px",
+          display: "grid",
+          gridTemplateColumns: "50% 50%",
+          placeItems: "center",
+          gap: "10px",
           background: "rgba(0,0,0,0.1)",
         }}
       >
@@ -387,7 +512,7 @@ export default function MobileView() {
           style={{
             width: "100%",
             height: "max-content",
-            padding: "50px",
+            padding: "10px",
             border: "0.5px solid rgba(255, 255, 255, 0.5)",
             borderRadius: "20px",
             boxShadow: "0px -6px 30px 5px rgba(20,20,20,1)",
@@ -397,19 +522,19 @@ export default function MobileView() {
             marginBottom: "3em",
           }}
         >
-          <h2> 100% </h2>
+          <img style={{ height: "40px" }} src={bridge} alt="bridge" srcset="" />
           <div
             style={{ height: "2px", background: "rgba(255, 255, 255, 0.1)" }}
           ></div>
           <p style={{ fontSize: "0.7em", textAlign: "center" }}>
-            Satisfied Clients
+            Bridging the gap between manpower and coustomer
           </p>
         </div>
         <div
           style={{
             width: "100%",
             height: "max-content",
-            padding: "50px",
+            padding: "10px",
             border: "0.5px solid rgba(255, 255, 255, 0.5)",
             borderRadius: "20px",
             boxShadow: "0px -6px 30px 5px rgba(20,20,20,1)",
@@ -419,20 +544,20 @@ export default function MobileView() {
             marginBottom: "3em",
           }}
         >
-          <h2>245 +</h2>
+          <img style={{ height: "40px" }} src={saving} alt="saving" srcset="" />
           <div
             style={{ height: "2px", background: "rgba(255, 255, 255, 0.1)" }}
           ></div>
           <p style={{ fontSize: "0.7em", textAlign: "center" }}>
             {" "}
-            Employees on worldwide
+            Save your cost and get hassle free manpower
           </p>
         </div>
         <div
           style={{
             width: "100%",
             height: "max-content",
-            padding: "50px",
+            padding: "10px",
             border: "0.5px solid rgba(255, 255, 255, 0.5)",
             borderRadius: "20px",
             boxShadow: "0px -6px 30px 5px rgba(20,20,20,1)",
@@ -441,12 +566,43 @@ export default function MobileView() {
             gap: "20px",
           }}
         >
-          <h2>356</h2>
+          <img
+            style={{ height: "40px" }}
+            src={customerCare}
+            alt="customer_care"
+            srcset=""
+          />
           <div
             style={{ height: "2px", background: "rgba(255, 255, 255, 0.1)" }}
           ></div>
           <p style={{ fontSize: "0.7em", textAlign: "center" }}>
-            Proiects completed on 45 countries
+            Get 24×7 coustomer support
+          </p>
+        </div>
+        <div
+          style={{
+            width: "100%",
+            height: "max-content",
+            padding: "10px",
+            border: "0.5px solid rgba(255, 255, 255, 0.5)",
+            borderRadius: "20px",
+            boxShadow: "0px -6px 30px 5px rgba(20,20,20,1)",
+            display: "flex",
+            flexDirection: "column",
+            gap: "20px",
+          }}
+        >
+          <img
+            style={{ height: "40px" }}
+            src={tracking}
+            alt="tracking"
+            srcset=""
+          />
+          <div
+            style={{ height: "2px", background: "rgba(255, 255, 255, 0.1)" }}
+          ></div>
+          <p style={{ fontSize: "0.7em", textAlign: "center" }}>
+            Live tracking, Quality assurance
           </p>
         </div>
       </section>
@@ -528,6 +684,169 @@ export default function MobileView() {
       </section>
       <section
         id="services_mobile"
+        style={{
+          // border: "2px solid red",
+          width: "100%",
+          background: "rgba(0,0,0,0.4)",
+        }}
+      >
+        <h2
+          style={{
+            textAlign: "center",
+            width: "100%",
+            paddingTop: "80px",
+            fontSize: "2.5em",
+          }}
+        >
+          Our Services
+        </h2>
+        <div
+          style={{
+            width: "100%",
+            padding: "30px",
+            paddingBottom: "100px",
+            display: "grid",
+            gridTemplateColumns: "45% 45%",
+            gap: "10%",
+          }}
+        >
+          <div
+            style={{
+              padding: "20px",
+              border: "0.5px solid rgba(255, 255, 255, 0.5)",
+              borderRadius: "20px",
+              boxShadow: "0px -6px 30px 5px rgba(20,20,20,1)",
+              display: "grid",
+              gap: "10px",
+              placeItems: "center",
+            }}
+          >
+            <img
+              style={{ height: "40px" }}
+              src={carpernter}
+              alt="carpernter"
+              srcset=""
+            />
+            <p
+              style={{ fontSize: "0.6em", textAlign: "center", color: "white" }}
+            >
+              Carpentry work
+            </p>
+          </div>
+          <div
+            style={{
+              padding: "20px 20px",
+              border: "0.5px solid rgba(255, 255, 255, 0.5)",
+              borderRadius: "20px",
+              boxShadow: "0px -6px 30px 5px rgba(20,20,20,1)",
+              display: "grid",
+              gap: "10px",
+              placeItems: "center",
+            }}
+          >
+            <img
+              style={{ height: "40px" }}
+              src={electrician}
+              alt="electrician"
+              srcset=""
+            />
+            <p
+              style={{ fontSize: "0.6em", textAlign: "center", color: "white" }}
+            >
+              Professional Electrician
+            </p>
+          </div>
+          <div
+            style={{
+              padding: "20px 20px",
+              border: "0.5px solid rgba(255, 255, 255, 0.5)",
+              borderRadius: "20px",
+              boxShadow: "0px -6px 30px 5px rgba(20,20,20,1)",
+              display: "grid",
+              gap: "10px",
+              placeItems: "center",
+            }}
+          >
+            <img style={{ height: "40px" }} src={mason} alt="mason" srcset="" />
+            <p
+              style={{ fontSize: "0.6em", textAlign: "center", color: "white" }}
+            >
+              Civil Mason
+            </p>
+          </div>
+          <div
+            style={{
+              padding: "20px 20px",
+              border: "0.5px solid rgba(255, 255, 255, 0.5)",
+              borderRadius: "20px",
+              boxShadow: "0px -6px 30px 5px rgba(20,20,20,1)",
+              display: "grid",
+              gap: "10px",
+              placeItems: "center",
+            }}
+          >
+            <img
+              style={{ height: "40px" }}
+              src={painter}
+              alt="painter"
+              srcset=""
+            />
+            <p
+              style={{ fontSize: "0.6em", textAlign: "center", color: "white" }}
+            >
+              Painter
+            </p>
+          </div>
+          <div
+            style={{
+              padding: "20px 20px",
+              border: "0.5px solid rgba(255, 255, 255, 0.5)",
+              borderRadius: "20px",
+              boxShadow: "0px -6px 30px 5px rgba(20,20,20,1)",
+              display: "grid",
+              gap: "10px",
+              placeItems: "center",
+            }}
+          >
+            <img
+              style={{ height: "40px" }}
+              src={plumber}
+              alt="plumber"
+              srcset=""
+            />
+            <p
+              style={{ fontSize: "0.6em", textAlign: "center", color: "white" }}
+            >
+              Plumbing Experts
+            </p>
+          </div>
+          <div
+            style={{
+              padding: "20px 20px",
+              border: "0.5px solid rgba(255, 255, 255, 0.5)",
+              borderRadius: "20px",
+              boxShadow: "0px -6px 30px 5px rgba(20,20,20,1)",
+              display: "grid",
+              gap: "10px",
+              placeItems: "center",
+            }}
+          >
+            <img
+              style={{ height: "40px" }}
+              src={marble}
+              alt="marble mason"
+              srcset=""
+            />
+
+            <p
+              style={{ fontSize: "0.6em", textAlign: "center", color: "white" }}
+            >
+              Marble Mason
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
         style={{
           // border: "2px solid red",
           width: "100%",
@@ -744,13 +1063,13 @@ export default function MobileView() {
             justifyContent: "center",
           }}
         >
-          <h4>About</h4>
-          <div>
-            <p>thegs</p>
-            <p>thegs</p>
-            <p>thegs</p>
-            <p>thegs</p>
-            <p>thegs</p>
+          <h4>Navigation</h4>
+          <div className="footer_services">
+            <p>Home</p>
+            <p>About us</p>
+            <p>Services</p>
+            <p>Missions & Goals</p>
+            <p>Resources</p>
           </div>
         </div>
         <div
@@ -763,12 +1082,13 @@ export default function MobileView() {
           }}
         >
           <h4>Services</h4>
-          <div>
-            <p>thegs</p>
-            <p>thegs</p>
-            <p>thegs</p>
-            <p>thegs</p>
-            <p>thegs</p>
+          <div className="footer_services">
+            <p>Civil Mason</p>
+            <p>Professional Electrician </p>
+            <p>Plumbing experts</p>
+            <p>Painter</p>
+            <p> Carpentry work</p>
+            <p>Marble Mason</p>
           </div>
         </div>
 
@@ -802,10 +1122,16 @@ export default function MobileView() {
                 justifyContent: "flex-start",
               }}
             >
-              <BsFacebook />
-              <BsInstagram />
-              <BsTwitter />
-              <BsLinkedin />
+              <a href="https://www.facebook.com/innards.in?mibextid=ZbWKwL">
+                <BsFacebook />
+              </a>
+
+              <a href="https://instagram.com/innards.in?igshid=ZDdkNTZiNTM=">
+                <BsInstagram />
+              </a>
+              <a href="https://www.linkedin.com/company/innainfra/">
+                <BsLinkedin />
+              </a>
             </div>
           </div>
         </div>
@@ -815,3 +1141,39 @@ export default function MobileView() {
     </div>
   );
 }
+const styles = {
+  card: {
+    width: "25%",
+    height: "35vh",
+    padding: "50px",
+    border: "0.5px solid rgba(255, 255, 255, 0.5)",
+    borderRadius: "20px",
+    boxShadow: "0px -6px 30px 5px rgba(20,20,20,1)",
+    display: "flex",
+    flexDirection: "column",
+    gap: "20px",
+  },
+  cardText: {
+    fontSize: "0.8em",
+  },
+  ServiceCard: {
+    width: "100%",
+    height: "35vh",
+    padding: "50px",
+    border: "0.5px solid rgba(255, 255, 255, 0.5)",
+    borderRadius: "20px",
+    boxShadow: "0px -6px 30px 5px rgba(20,20,20,1)",
+    display: "flex",
+    flexDirection: "column",
+    gap: "20px",
+  },
+  AboutCard: {
+    padding: "10px",
+    border: "0.5px solid rgba(255, 255, 255, 0.5)",
+    borderRadius: "20px",
+    boxShadow: "0px -6px 30px 5px rgba(20,20,20,1)",
+    display: "flex",
+    flexDirection: "column",
+    gap: "20px",
+  },
+};

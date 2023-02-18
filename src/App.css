@@ -11,6 +11,7 @@
   padding: 0;
   text-align: center;
   scroll-behavior: smooth;
+
 }
 
 h4 {
@@ -54,6 +55,7 @@ a {
   flex-direction: column;
 }
 
+
 @media only screen and (max-width: 768px) {
   .mobile_view {
     display: flex;
@@ -63,5 +65,9 @@ a {
   .desktop_view {
     display: none !important;
     visibility: none !important;
+  }
+
+  .footer_services p {
+    text-align: center;
   }
 }
