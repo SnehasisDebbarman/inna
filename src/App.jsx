@@ -30,6 +30,8 @@ import plumber from "./assets/plumber.svg";
 import data from "./assets/data.svg";
 import cost_effective from "./assets/cost_effective.svg";
 import information from "./assets/information.svg";
+import electrician_lottie from "./assets/electrician_lottie.json";
+import art from "./assets/workers.svg";
 
 function App() {
   const [Input, setInput] = useState("");
@@ -352,7 +354,6 @@ function App() {
             // border: "2px solid red",
             alignSelf: "center",
             width: "90%",
-            height: "100vh",
             padding: "20px 0",
             display: "grid",
             gridTemplateColumns: "50% 50%",
@@ -360,15 +361,25 @@ function App() {
           }}
           id="about"
         >
-          <Lottie
+          {/* <Lottie
             style={{
               margin: "20px",
             }}
-            animationData={constructionAbout}
+            animationData={electrician_lottie}
             loop={true}
+          /> */}
+          <img
+            style={{
+              width: "70%",
+              margin: "50px",
+              paddingTop: "50px",
+            }}
+            src={art}
+            alt=""
+            srcset=""
           />
           <div style={{ textAlign: "start" }}>
-            <h2>About Us</h2>
+            <h2 style={{ padding: "30px 0", fontSize: "2rem" }}>About Us</h2>
             <p>
               INNA is a provider of digital and physical interaction platforms
               that simplify procurement and supplier processes. Our services are
@@ -376,7 +387,7 @@ function App() {
               the procurement and supplier process, regardless of the industry
               or niche they operate in.
             </p>
-            <h4>Our Services</h4>
+            <h4 style={{ padding: "20px 0" }}>Our Services</h4>
             <div
               style={{
                 display: "grid",
@@ -404,7 +415,6 @@ function App() {
                   style={{
                     fontSize: "0.7em",
                     textAlign: "center",
-                    color: "white",
                   }}
                 >
                   We provide procurement guidance based on data analytics,
@@ -430,7 +440,6 @@ function App() {
                   style={{
                     fontSize: "0.7em",
                     textAlign: "center",
-                    color: "white",
                   }}
                 >
                   We provide real-time information on the availability of
@@ -456,7 +465,6 @@ function App() {
                   style={{
                     fontSize: "0.7em",
                     textAlign: "center",
-                    color: "white",
                   }}
                 >
                   We offer statistical comparisons of cost, quality, and service
@@ -465,16 +473,6 @@ function App() {
                 </p>
               </div>
             </div>
-
-            <h4>Our Mission</h4>
-            <p>
-              Our mission is to simplify the procurement and supplier process
-              for businesses and individuals, enabling them to make informed
-              decisions that lead to better outcomes. We are committed to
-              providing user-friendly, reliable, and innovative solutions that
-              help our clients meet their goals and objectives with minimum
-              hassle.
-            </p>
           </div>
         </section>
         <div
@@ -487,6 +485,13 @@ function App() {
           }}
         >
           <h2 style={{ fontSize: "2rem" }}>Our Mission & Goals</h2>
+          <p style={{ padding: "20px" }}>
+            Our mission is to simplify the procurement and supplier process for
+            businesses and individuals, enabling them to make informed decisions
+            that lead to better outcomes. We are committed to providing
+            user-friendly, reliable, and innovative solutions that help our
+            clients meet their goals and objectives with minimum hassle.
+          </p>
         </div>
         <section
           style={{

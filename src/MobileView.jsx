@@ -34,6 +34,8 @@ import data from "./assets/data.svg";
 import cost_effective from "./assets/cost_effective.svg";
 import information from "./assets/information.svg";
 
+import "./styles/mobile_view.css";
+
 export default function MobileView() {
   const [ShowNav, setShowNav] = useState(false);
   const [Input, setInput] = useState("");
@@ -47,26 +49,15 @@ export default function MobileView() {
   }
   function NavList(params) {
     return (
-      <div
-        style={{
-          top: 60,
-          position: "fixed",
-          zIndex: "10",
-          width: "100%",
-          padding: "20px",
-          backgroundColor: "black",
-          display: "flex",
-          flexDirection: "column",
-          gap: "10px",
-        }}
-      >
+      <div className="mobile_nav" style={{ top: 60 }}>
         <div
+          className="nav_item"
           onClick={() => {
             setShowNav(!ShowNav);
           }}
         >
           {" "}
-          <a href="#home_mobile" target="_self">
+          <a className="nav_text" href="#home_mobile" target="_self">
             Home
           </a>
         </div>
