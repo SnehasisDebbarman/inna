@@ -302,7 +302,7 @@ function App() {
             <h2
               style={{
                 textAlign: "start",
-                fontSize: "1.5em",
+                fontSize: "1.4em",
               }}
             >
               Are you Looking for Manpower/ Resources ?
@@ -311,12 +311,11 @@ function App() {
               style={{
                 textAlign: "start",
                 color: "rgba(255,255,255,0.4)",
-                fontSize: "0.7em",
+                fontSize: "1em",
               }}
             >
-              Is your business or organization presently seeking to procure the
-              necessary human resources and materials for the
-              construction/repair work?
+              Are you facing problem finding manpower for your project? We are
+              happy to help!
             </p>
             <p
               style={{
@@ -349,6 +348,177 @@ function App() {
           animationData={constructionAnim}
           loop={true}
         />
+        <section
+          id="services"
+          style={{
+            // border: "2px solid red",
+            width: "100%",
+            height: "max-content",
+            background: "rgba(0,0,0,0.4)",
+          }}
+        >
+          <h2
+            style={{
+              textAlign: "center",
+              width: "100%",
+              paddingTop: "80px",
+              fontSize: "2.5em",
+            }}
+          >
+            Our Services
+          </h2>
+          <div
+            style={{
+              width: "100%",
+              padding: "100px",
+              display: "grid",
+              flexDirection: "column",
+              placeItems: "center",
+              gridTemplateColumns: "30% 30% 30%",
+              gap: "5%",
+            }}
+          >
+            <div style={styles.ServiceCard}>
+              <img
+                style={{ height: "70px" }}
+                src={painter}
+                alt="painter"
+                srcset=""
+              />
+              <div
+                style={{
+                  height: "2px",
+                  background: "rgba(255, 255, 255, 0.1)",
+                }}
+              ></div>
+              <p
+                style={{
+                  fontSize: "0.7em",
+                  textAlign: "center",
+                  color: "white",
+                }}
+              >
+                Painter
+              </p>
+            </div>
+            <div style={styles.ServiceCard}>
+              <img
+                style={{ height: "70px" }}
+                src={plumber}
+                alt="plumber"
+                srcset=""
+              />
+              <div
+                style={{
+                  height: "2px",
+                  background: "rgba(255, 255, 255, 0.1)",
+                }}
+              ></div>
+              <p
+                style={{
+                  fontSize: "0.7em",
+                  textAlign: "center",
+                  color: "white",
+                }}
+              >
+                Plumbing experts
+              </p>
+            </div>
+            <div style={styles.ServiceCard}>
+              <img
+                style={{ height: "70px" }}
+                src={electrician}
+                alt="electrician"
+                srcset=""
+              />
+              <div
+                style={{
+                  height: "2px",
+                  background: "rgba(255, 255, 255, 0.1)",
+                }}
+              ></div>
+              <p
+                style={{
+                  fontSize: "0.7em",
+                  textAlign: "center",
+                  color: "white",
+                }}
+              >
+                Professional Electrician
+              </p>
+            </div>
+            <div style={styles.ServiceCard}>
+              <img
+                style={{ height: "70px" }}
+                src={mason}
+                alt="mason"
+                srcset=""
+              />
+              <div
+                style={{
+                  height: "2px",
+                  background: "rgba(255, 255, 255, 0.1)",
+                }}
+              ></div>
+              <p
+                style={{
+                  fontSize: "0.7em",
+                  textAlign: "center",
+                  color: "white",
+                }}
+              >
+                Civil Mason
+              </p>
+            </div>
+            <div style={styles.ServiceCard}>
+              <img
+                style={{ height: "70px" }}
+                src={carpernter}
+                alt="carpernter"
+                srcset=""
+              />
+              <div
+                style={{
+                  height: "2px",
+                  background: "rgba(255, 255, 255, 0.1)",
+                }}
+              ></div>
+              <p
+                style={{
+                  fontSize: "0.7em",
+                  textAlign: "center",
+                  color: "white",
+                }}
+              >
+                Carpentry work
+              </p>
+            </div>
+            {/* 
+            <div style={styles.ServiceCard}>
+              <img
+                style={{ height: "70px" }}
+                src={marble}
+                alt="marble"
+                srcset=""
+              />
+              <div
+                style={{
+                  height: "2px",
+                  background: "rgba(255, 255, 255, 0.1)",
+                }}
+              ></div>
+              <p
+                style={{
+                  fontSize: "0.7em",
+                  textAlign: "center",
+                  color: "white",
+                }}
+              >
+                Marble Mason
+              </p>
+            </div> */}
+          </div>
+        </section>
         <section
           style={{
             // border: "2px solid red",
@@ -618,8 +788,8 @@ function App() {
                 textAlign: "start",
               }}
             >
-              Finding the right consultants,construction materials,contractor
-              and engineers is no longer a headche
+              Finding the right consultant, Manpower and resources for your
+              needs is no longer a headache.
             </h2>
             <p
               style={{
@@ -649,175 +819,7 @@ function App() {
             </button>
           </div>
         </section>
-        <section
-          id="services"
-          style={{
-            // border: "2px solid red",
-            width: "100%",
-            height: "max-content",
-            background: "rgba(0,0,0,0.4)",
-          }}
-        >
-          <h2
-            style={{
-              textAlign: "center",
-              width: "100%",
-              paddingTop: "80px",
-              fontSize: "2.5em",
-            }}
-          >
-            Our Services
-          </h2>
-          <div
-            style={{
-              width: "100%",
-              padding: "100px",
-              display: "grid",
-              flexDirection: "column",
-              gridTemplateColumns: "30% 30% 30%",
-              gap: "5%",
-            }}
-          >
-            <div style={styles.ServiceCard}>
-              <img
-                style={{ height: "70px" }}
-                src={carpernter}
-                alt="carpernter"
-                srcset=""
-              />
-              <div
-                style={{
-                  height: "2px",
-                  background: "rgba(255, 255, 255, 0.1)",
-                }}
-              ></div>
-              <p
-                style={{
-                  fontSize: "0.7em",
-                  textAlign: "center",
-                  color: "white",
-                }}
-              >
-                Carpentry work
-              </p>
-            </div>
-            <div style={styles.ServiceCard}>
-              <img
-                style={{ height: "70px" }}
-                src={electrician}
-                alt="electrician"
-                srcset=""
-              />
-              <div
-                style={{
-                  height: "2px",
-                  background: "rgba(255, 255, 255, 0.1)",
-                }}
-              ></div>
-              <p
-                style={{
-                  fontSize: "0.7em",
-                  textAlign: "center",
-                  color: "white",
-                }}
-              >
-                Professional Electrician
-              </p>
-            </div>
-            <div style={styles.ServiceCard}>
-              <img
-                style={{ height: "70px" }}
-                src={mason}
-                alt="mason"
-                srcset=""
-              />
-              <div
-                style={{
-                  height: "2px",
-                  background: "rgba(255, 255, 255, 0.1)",
-                }}
-              ></div>
-              <p
-                style={{
-                  fontSize: "0.7em",
-                  textAlign: "center",
-                  color: "white",
-                }}
-              >
-                Civil Mason
-              </p>
-            </div>
-            <div style={styles.ServiceCard}>
-              <img
-                style={{ height: "70px" }}
-                src={painter}
-                alt="painter"
-                srcset=""
-              />
-              <div
-                style={{
-                  height: "2px",
-                  background: "rgba(255, 255, 255, 0.1)",
-                }}
-              ></div>
-              <p
-                style={{
-                  fontSize: "0.7em",
-                  textAlign: "center",
-                  color: "white",
-                }}
-              >
-                Painter
-              </p>
-            </div>
-            <div style={styles.ServiceCard}>
-              <img
-                style={{ height: "70px" }}
-                src={plumber}
-                alt="plumber"
-                srcset=""
-              />
-              <div
-                style={{
-                  height: "2px",
-                  background: "rgba(255, 255, 255, 0.1)",
-                }}
-              ></div>
-              <p
-                style={{
-                  fontSize: "0.7em",
-                  textAlign: "center",
-                  color: "white",
-                }}
-              >
-                Plumbing experts
-              </p>
-            </div>
-            <div style={styles.ServiceCard}>
-              <img
-                style={{ height: "70px" }}
-                src={marble}
-                alt="marble"
-                srcset=""
-              />
-              <div
-                style={{
-                  height: "2px",
-                  background: "rgba(255, 255, 255, 0.1)",
-                }}
-              ></div>
-              <p
-                style={{
-                  fontSize: "0.7em",
-                  textAlign: "center",
-                  color: "white",
-                }}
-              >
-                Marble Mason
-              </p>
-            </div>
-          </div>
-        </section>
+
         <section
           id="services"
           style={{
