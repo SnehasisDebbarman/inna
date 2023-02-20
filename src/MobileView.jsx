@@ -173,11 +173,7 @@ export default function MobileView() {
               fontFamily: "'Playfair Display', serif",
             }}
           >
-            We're Help To
-            <br />
-            Bulid Your Dream
-            <br />
-            Professionaly
+            Are you Looking for <br /> Manpower/ Resources ?
           </div>
           <p
             style={{
@@ -188,9 +184,8 @@ export default function MobileView() {
               marginTop: "20px",
             }}
           >
-            {" "}
-            We Always Prioritize The Maximum Possible Result with Modern
-            Mathodes And The Latest Tachnology.
+            Are you facing problem finding manpower for your project? We are
+            happy to help!
           </p>
           <div
             style={{
@@ -241,72 +236,6 @@ export default function MobileView() {
               )}
             </button>
           </div>
-          <div
-            style={{
-              textAlign: "start",
-              alignSelf: "flex-start",
-              width: "100%",
-            }}
-          >
-            <p
-              style={{
-                textAlign: "start",
-                alignSelf: "flex-start",
-              }}
-            >
-              If You're Hurry, Quick Call For Us.
-            </p>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                gap: "20px",
-                // border: "2px solid red",
-              }}
-            >
-              <div
-                style={{
-                  padding: "15px",
-                  // backgroundColor: "",
-                }}
-              >
-                <FiPhoneCall
-                  color="white"
-                  // size={15}
-                  style={{
-                    boxShadow: "2px 2px 4px -3px rgba(87,87,87,0.5)",
-                    padding: "7px",
-                    height: "30px",
-                    width: "30px",
-                    borderRadius: "16px",
-                    backgroundColor: "rgba(0,0,0,0.3)",
-                  }}
-                />
-              </div>
-              <div>
-                <p
-                  style={{
-                    textAlign: "start",
-                    alignSelf: "flex-start",
-                    fontSize: "0.5em",
-                    color: "#a5f3fc",
-                  }}
-                >
-                  HOTLINE 24/7
-                </p>
-                <p
-                  style={{
-                    textAlign: "start",
-                    alignSelf: "flex-start",
-                    fontSize: "0.8em",
-                  }}
-                >
-                  +91-7980798828
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
         <Lottie
           style={{
@@ -318,7 +247,7 @@ export default function MobileView() {
           animationData={constructionAnim}
           loop={true}
         />
-        <div
+        {/* <div
           style={{
             display: "flex",
             flexDirection: "column",
@@ -367,7 +296,7 @@ export default function MobileView() {
             <p>Get Quote Now</p>
             <BsArrowRight color="black" />
           </button>
-        </div>
+        </div> */}
       </section>
       <section
         id="services_mobile"
@@ -508,7 +437,7 @@ export default function MobileView() {
             </p>
           </div>
 
-          {/* <div
+          <div
             style={{
               padding: "20px 20px",
               border: "0.5px solid rgba(255, 255, 255, 0.5)",
@@ -529,9 +458,113 @@ export default function MobileView() {
             <p
               style={{ fontSize: "0.6em", textAlign: "center", color: "white" }}
             >
-              Marble Mason
+              Professional Consultancy
             </p>
-          </div> */}
+          </div>
+        </div>
+      </section>
+      <section
+        style={{
+          width: "100%",
+        }}
+        id="about_mobile"
+      >
+        <Lottie style={{}} animationData={constructionAbout} loop={true} />
+        <div style={{ textAlign: "start", padding: "20px" }}>
+          <h2>About Us</h2>
+          <p>
+            INNA is a provider of digital and physical interaction platforms
+            that simplify procurement and supplier processes. Our services are
+            designed to help our users make informed decisions and streamline
+            the procurement and supplier process, regardless of the industry or
+            niche they operate in.
+          </p>
+          <h4 style={{ textAlign: "center", padding: "20px" }}>
+            Our Speciality
+          </h4>
+          <div
+            style={{
+              width: "100%",
+              display: "grid",
+              //   gridTemplateColumns: "50% 50%",
+              gap: "20px",
+              padding: "20px",
+            }}
+          >
+            {" "}
+            <div style={styles.AboutCard}>
+              <img style={{ height: "40px" }} src={data} alt="data" srcset="" />
+              <h5>Data-backed knowledge guidance</h5>
+              <div
+                style={{
+                  height: "2px",
+                  background: "rgba(255, 255, 255, 0.1)",
+                }}
+              ></div>
+              <p
+                style={{
+                  fontSize: "0.7em",
+                  textAlign: "center",
+                  color: "white",
+                }}
+              >
+                We provide procurement guidance based on data analytics, helping
+                our users make informed decisions based on real-time insights.
+              </p>
+            </div>
+            <div style={styles.AboutCard}>
+              <img
+                style={{ height: "40px" }}
+                src={information}
+                alt="information"
+                srcset=""
+              />
+              <h5>Live information on Labour & resources</h5>
+              <div
+                style={{
+                  height: "2px",
+                  background: "rgba(255, 255, 255, 0.1)",
+                }}
+              ></div>
+              <p
+                style={{
+                  fontSize: "0.7em",
+                  textAlign: "center",
+                  color: "white",
+                }}
+              >
+                We provide real-time information on the availability of skilled
+                labour and other resources in the local area.
+              </p>
+            </div>
+            <div style={styles.AboutCard}>
+              <img
+                style={{ height: "40px" }}
+                src={cost_effective}
+                alt="cost_effective"
+                srcset=""
+              />
+              <h5>Statistical comparison on Cost & services</h5>
+
+              <div
+                style={{
+                  height: "2px",
+                  background: "rgba(255, 255, 255, 0.1)",
+                }}
+              ></div>
+              <p
+                style={{
+                  fontSize: "0.7em",
+                  textAlign: "center",
+                  color: "white",
+                }}
+              >
+                We offer statistical comparisons of cost, quality, and service
+                delivery from various suppliers, enabling our users to make
+                informed decisions that suit their specific needs.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <div
@@ -660,108 +693,6 @@ export default function MobileView() {
           <p style={{ fontSize: "0.7em", textAlign: "center" }}>
             Live tracking, Quality assurance
           </p>
-        </div>
-      </section>
-      <section
-        style={{
-          width: "100%",
-        }}
-        id="about_mobile"
-      >
-        <Lottie style={{}} animationData={constructionAbout} loop={true} />
-        <div style={{ textAlign: "start", padding: "20px" }}>
-          <h2>About Us</h2>
-          <p>
-            INNA is a provider of digital and physical interaction platforms
-            that simplify procurement and supplier processes. Our services are
-            designed to help our users make informed decisions and streamline
-            the procurement and supplier process, regardless of the industry or
-            niche they operate in.
-          </p>
-          <h4>Our Services</h4>
-          <div
-            style={{
-              width: "100%",
-              display: "grid",
-              //   gridTemplateColumns: "50% 50%",
-              gap: "20px",
-              padding: "30px",
-            }}
-          >
-            {" "}
-            <div style={styles.AboutCard}>
-              <img style={{ height: "40px" }} src={data} alt="data" srcset="" />
-              <h5>Data-backed knowledge guidance</h5>
-              <div
-                style={{
-                  height: "2px",
-                  background: "rgba(255, 255, 255, 0.1)",
-                }}
-              ></div>
-              <p
-                style={{
-                  fontSize: "0.7em",
-                  textAlign: "center",
-                  color: "white",
-                }}
-              >
-                We provide procurement guidance based on data analytics, helping
-                our users make informed decisions based on real-time insights.
-              </p>
-            </div>
-            <div style={styles.AboutCard}>
-              <img
-                style={{ height: "40px" }}
-                src={information}
-                alt="information"
-                srcset=""
-              />
-              <h5>Live information on Labour & resources</h5>
-              <div
-                style={{
-                  height: "2px",
-                  background: "rgba(255, 255, 255, 0.1)",
-                }}
-              ></div>
-              <p
-                style={{
-                  fontSize: "0.7em",
-                  textAlign: "center",
-                  color: "white",
-                }}
-              >
-                We provide real-time information on the availability of skilled
-                labour and other resources in the local area.
-              </p>
-            </div>
-            <div style={styles.AboutCard}>
-              <img
-                style={{ height: "40px" }}
-                src={cost_effective}
-                alt="cost_effective"
-                srcset=""
-              />
-              <h5>Statistical comparison on Cost & services</h5>
-
-              <div
-                style={{
-                  height: "2px",
-                  background: "rgba(255, 255, 255, 0.1)",
-                }}
-              ></div>
-              <p
-                style={{
-                  fontSize: "0.7em",
-                  textAlign: "center",
-                  color: "white",
-                }}
-              >
-                We offer statistical comparisons of cost, quality, and service
-                delivery from various suppliers, enabling our users to make
-                informed decisions that suit their specific needs.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -1068,26 +999,6 @@ export default function MobileView() {
             <p>Resources</p>
           </div>
         </div>
-        <div
-          style={{
-            width: "100%",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <h4>Services</h4>
-          <div className="footer_services">
-            <p>Civil Mason</p>
-            <p>Professional Electrician </p>
-            <p>Plumbing experts</p>
-            <p>Painter</p>
-            <p> Carpentry work</p>
-            <p>Marble Mason</p>
-          </div>
-        </div>
-
         <div
           style={{
             width: "100%",

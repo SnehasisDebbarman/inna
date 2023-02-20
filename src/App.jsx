@@ -148,11 +148,8 @@ function App() {
                 // border: "1px solid red",
               }}
             >
-              We're Help To
-              <br />
-              Bulid Your Dream
-              <br />
-              Professionaly
+              Are you Looking for <br />
+              Manpower/ Resources ?
             </div>
             <p
               style={{
@@ -163,9 +160,8 @@ function App() {
                 marginTop: "20px",
               }}
             >
-              {" "}
-              We Always Prioritize The Maximum Possible Result with Modern
-              Mathodes And The Latest Tachnology.
+              Are you facing problem finding manpower for your project? We are
+              happy to help!
             </p>
             <div
               style={{
@@ -219,7 +215,22 @@ function App() {
                 )}
               </button>
             </div>
-            <div
+            {/* <button
+              style={{
+                margin: "20px 0",
+                width: "max-content",
+                borderRadius: "2em",
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: "1em",
+              }}
+            >
+              <p>Get Quote Now</p>
+              <BsArrowRight color="black" />
+            </button> */}
+            {/* <div
               style={{
                 textAlign: "start",
                 alignSelf: "flex-start",
@@ -287,19 +298,29 @@ function App() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div
             style={{
               display: "flex",
               flexDirection: "column",
+              placeItems: "center",
               width: "50%",
               textAlign: "start",
-              paddingTop: "12em",
+              paddingTop: "6em",
               gap: "20px",
+              height: "100%",
             }}
           >
-            <h2
+            <Lottie
+              style={{
+                // position: "absolute",
+                width: "100%",
+              }}
+              animationData={constructionAnim}
+              loop={true}
+            />
+            {/* <h2
               style={{
                 textAlign: "start",
                 fontSize: "1.4em",
@@ -321,33 +342,10 @@ function App() {
               style={{
                 textAlign: "start",
               }}
-            ></p>
-            <button
-              style={{
-                width: "max-content",
-                borderRadius: "2em",
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-                gap: "1em",
-              }}
-            >
-              <p>Get Quote Now</p>
-              <BsArrowRight color="black" />
-            </button>
+            ></p> */}
           </div>
         </section>
-        <Lottie
-          style={{
-            position: "absolute",
-            right: 0,
-            width: "30%",
-            bottom: 0,
-          }}
-          animationData={constructionAnim}
-          loop={true}
-        />
+
         <section
           id="services"
           style={{
@@ -493,7 +491,7 @@ function App() {
                 Carpentry work
               </p>
             </div>
-            {/* 
+
             <div style={styles.ServiceCard}>
               <img
                 style={{ height: "70px" }}
@@ -514,11 +512,13 @@ function App() {
                   color: "white",
                 }}
               >
-                Marble Mason
+                Professonal Consultant
               </p>
-            </div> */}
+            </div>
           </div>
         </section>
+
+        {/* section 3 */}
         <section
           style={{
             // border: "2px solid red",
@@ -557,7 +557,7 @@ function App() {
               the procurement and supplier process, regardless of the industry
               or niche they operate in.
             </p>
-            <h4 style={{ padding: "20px 0" }}>Our Services</h4>
+            <h4 style={{ padding: "20px 0" }}>Our Speciality</h4>
             <div
               style={{
                 display: "grid",
@@ -645,6 +645,7 @@ function App() {
             </div>
           </div>
         </section>
+
         <div
           id="mission"
           style={{
@@ -982,11 +983,13 @@ function App() {
             </button>
           </div>
         </section>
+
         <div
           style={{
             borderBottom: "0.5px solid rgba(255,255,255,0.1)",
           }}
         ></div>
+
         <section
           style={{
             width: "100%",
@@ -1041,21 +1044,6 @@ function App() {
               <p>Services</p>
               <p>Missions & Goals</p>
               <p>Resources</p>
-            </div>
-          </div>
-          <div
-            style={{
-              width: "15%",
-            }}
-          >
-            <h4>Services</h4>
-            <div className="footer_services">
-              <p>Civil Mason</p>
-              <p>Professional Electrician </p>
-              <p>Plumbing experts</p>
-              <p>Painter</p>
-              <p> Carpentry work</p>
-              <p>Marble Mason</p>
             </div>
           </div>
 
