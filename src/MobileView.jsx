@@ -51,57 +51,70 @@ export default function MobileView() {
   }
   function NavList(params) {
     return (
-      <div className="mobile_nav" style={{ top: 60 }}>
-        <div
-          className="nav_item"
-          onClick={() => {
-            setShowNav(!ShowNav);
-          }}
-        >
-          {" "}
-          <a className="nav_text" href="#home_mobile" target="_self">
-            Home
-          </a>
-        </div>
-        <div
-          className="nav_item"
-          onClick={() => {
-            setShowNav(!ShowNav);
-          }}
-        >
-          <a href="#about_mobile" target="_self">
-            About
-          </a>
-        </div>
-        <div
-          className="nav_item"
-          onClick={() => {
-            setShowNav(!ShowNav);
-          }}
-        >
-          <a href="#services_mobile" target="_self">
-            Services
-          </a>
-        </div>
-        <div
-          className="nav_item"
-          onClick={() => {
-            setShowNav(!ShowNav);
-          }}
-        >
-          <a href="#mission_mobile" target="_self">
-            Mission
-          </a>
-        </div>
-        <div
-          className="nav_item"
-          onClick={() => {
-            setShowNav(!ShowNav);
-          }}
-        >
-          <a href="#resources_mobile" target="_self">
-            Resources
-          </a>
+      <div
+        style={{
+          top: 65,
+          position: "fixed",
+          // minHeight: "100vh",
+          // width: "100vw",
+          display: "flex",
+          justifyContent: "center",
+          zIndex: 101,
+          // alignItems: "center",
+        }}
+      >
+        <div className="mobile_nav" style={{ top: 60 }}>
+          <div
+            className="nav_item"
+            onClick={() => {
+              setShowNav(!ShowNav);
+            }}
+          >
+            {" "}
+            <a className="nav_text" href="#home_mobile" target="_self">
+              Home
+            </a>
+          </div>
+          <div
+            className="nav_item"
+            onClick={() => {
+              setShowNav(!ShowNav);
+            }}
+          >
+            <a href="#about_mobile" target="_self">
+              About
+            </a>
+          </div>
+          <div
+            className="nav_item"
+            onClick={() => {
+              setShowNav(!ShowNav);
+            }}
+          >
+            <a href="#services_mobile" target="_self">
+              Services
+            </a>
+          </div>
+          <div
+            className="nav_item"
+            onClick={() => {
+              setShowNav(!ShowNav);
+            }}
+          >
+            <a href="#mission_mobile" target="_self">
+              Mission
+            </a>
+          </div>
+          <div
+            className="nav_item"
+            onClick={() => {
+              setShowNav(!ShowNav);
+            }}
+          >
+            <a href="#resources_mobile" target="_self">
+              Resources
+            </a>
+          </div>
         </div>
       </div>
     );
